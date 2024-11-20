@@ -554,7 +554,7 @@ header {
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 421px) {
     .pie-pagina {
         transform: scale(70%);
         right: 45px;
