@@ -1,0 +1,570 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+body {
+    background: linear-gradient(245deg, #2a3d41 0%, #3a6579 25%, #131313 75%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+}
+
+.logo-principal {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.logo-principal:hover {
+    background-color: rgb(9, 47, 71);
+    border-radius: 20px;
+    transition: all 1s ease;
+}
+
+.barra-nav {
+    display: flex;
+}
+
+.barra-nav a {
+    margin-left: 130px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+}
+
+.barra-nav a:hover {
+    border-bottom: 3px solid white;
+    transition: all 0.8s ease;
+}
+
+#logo-menu {
+    font-size: 35px;
+    z-index: 101;
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 8%;
+}
+
+.texto-hero h4 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.texto-hero h1 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.texto-hero p {
+    font-size: 90%;
+    line-height: 2.5;
+    margin-bottom: 40px;
+}
+
+.texto-hero a {
+    font-size: 18px;
+    border: 2px solid rgb(6, 33, 51);
+    display: inline-block;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.texto-hero a:hover {
+    transform: scale(108%);
+    transform: translateX(8px);
+    background-color: rgb(6, 33, 51);
+    transition: all 0.7s ease;
+}
+
+.texto-hero i {
+    font-size: 25px;
+}
+
+.imagen {
+    border: 10px solid rgb(6, 33, 51);
+    border-radius: 80%;
+    width: 600px;
+    height: 560px;
+    margin-left: 150px;
+}
+
+.imagen:hover {
+    transform: scale(105%);
+    opacity: 0.5;
+    transition: all 2s linear;
+}
+
+.iconos {
+    position: absolute;
+    top: 35vh;
+    font-size: 33px;
+}
+
+.iconos i {
+    display: block;
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+
+.iconos i:hover {
+    color: rgb(48, 47, 47);
+    transform: translateY(-8px);
+    font-size: 37px;
+    transition: all 0.5s ease;
+}
+
+.flecha {
+    position: absolute;
+    bottom: 18%;
+    right: 3.5%;
+}
+
+.flecha i {
+    display: block;
+    font-size: 70px;
+}
+
+.flecha i:hover {
+    color: #131313;
+    transform: translateY(10px);
+    transition: all 0.5s ease;
+}
+
+.pie-pagina {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.port {
+    margin-left: 100px;
+    margin-bottom: 285px;
+
+}
+
+.port h1 {
+    text-align: center;
+    max-width: 540px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Courier Prime", monospace;
+}
+
+.port h3 {
+    font-family: "Courier Prime", monospace;
+    font-size: 15.5px;
+
+}
+
+.imagen-port {
+    position: relative;
+    left: 35px;
+    max-width: 450px;
+    margin-top: 70px;
+    border-radius: 30px;
+    opacity: 0.7;
+}
+
+.imagen-port:hover {
+    transform: scale(105%);
+    transition: all 0.5s ease;
+    opacity: 0.4;
+}
+
+.contact {
+    display: flex;
+    position: relative;
+    left: 250px;
+    flex-direction: column;
+    max-width: 400px;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contact h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Courier Prime", monospace;
+}
+
+.contact label {
+    margin: 15px;
+    border: 2px outset rgb(6, 33, 51);
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 900;
+    font-family: "Courier Prime", monospace;
+    font-size: 18px;
+}
+
+.contact input {
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contact input:focus {
+    background-color: bisque;
+    color: #131313;
+}
+
+.contact textarea {
+    font-size: 20px;
+    color: #131313;
+    border-radius: 10px;
+}
+
+.contact textarea:focus {
+    background-color: bisque;
+}
+
+.enviar {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #131313;
+    padding: 5px;
+    font-weight: 900;
+}
+
+.enviar:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+
+
+@media screen and (max-width: 1479px) {
+    .hero {
+        margin-top: 100px;
+    }
+
+    .iconos i {
+        margin-left: 30px;
+    }
+
+    .iconos {
+        top: 51vh;
+    }
+
+}
+
+@media screen and (max-width: 1375px) {
+    .contact {
+        left: 100px;
+    }
+
+    .port h3 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1223px) {
+    .barra-nav a {
+        margin-left: 40px;
+    }
+
+}
+
+@media screen and (max-width: 1220px) {
+    .hero {
+        margin-top: 150px;
+    }
+
+    .iconos i {
+        margin-left: 20px;
+    }
+
+    .iconos {
+        top: 56vh;
+    }
+
+}
+
+@media screen and (max-width: 1215px) {
+    .imagen-port {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .imagen {
+        transform: scale(85%);
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .pie-pagina {
+        grid-template-columns: 1fr;
+        grid: 0;
+    }
+
+    .port {
+        margin-bottom: 30px;
+        margin-left: 80px;
+    }
+
+    .port h3 {
+        text-align: start;
+    }
+
+    .imagen-port {
+        left: 40px;
+    }
+
+    .contact {
+        left: 135px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .imagen {
+        margin-left: -50px;
+        margin-top: 40px;
+    }
+
+    .imagen:hover {
+        transform: scale(90%);
+    }
+
+    .iconos {
+        top: 26vh;
+    }
+
+    .flecha {
+        bottom: 10%;
+    }
+}
+
+@media screen and (max-width: 880px) {
+
+    .iconos {
+        top: 26vh;
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .iconos {
+        top: 26vh;
+        
+    }
+}
+
+@media screen and (max-width: 730px) {
+    #logo-menu {
+        display: block;
+        position: relative;
+        right: 5px;
+    }
+
+    .barra-nav {
+        position: absolute;
+        top: 80%;
+        right: -100%;
+        width: 200px;
+        height: 180px;
+        background-color: #1b2f38;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 20px;
+        transition: all 0.5s ease;
+    }
+
+    .barra-nav a {
+        margin: 5px 0px;
+        display: block;
+    }
+
+    #barra.active {
+        right: 0;
+      }
+}
+
+@media screen and (max-width: 700px) {
+    .port {
+        position: relative;
+        right: 60px;
+    }
+
+    .imagen-port {
+        left: 60px;
+        margin-top: 30px;
+    }
+
+    .port h3 {
+        text-align: center;
+    }
+
+    .contact {
+        left: 88px;
+    }
+}
+
+@media screen and (max-width: 684px) {
+    .iconos {
+        top: 26vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .imagen-port {
+        left: 40px;
+    }
+
+    .texto-hero p {
+        width: 400px;
+    }
+
+    .texto-hero h1 {
+        font-size: 55px;
+    }
+
+    .flecha {
+        bottom: 3%;
+    }
+
+    .iconos i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .iconos {
+        position: relative;
+        top: 0;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .imagen-port {
+        left: 20px;
+    }
+
+    .contact {
+        left: 65px;
+    }
+}
+
+@media screen and (max-width: 583px) {
+    .imagen-port {
+        left: 10px;
+    }
+
+    .contact {
+        left: 45px;
+    }
+
+    .imagen {
+        transform: scale(70%);
+    }
+
+    .imagen-hero {
+        margin-left: -50px;
+    }
+
+    .imagen:hover {
+        transform: scale(71%);
+    }
+
+}
+
+@media screen and (max-width: 510px) {
+    .pie-pagina {
+        transform: scale(80%);
+        right: 35px;
+    }
+
+    .contact {
+        margin-bottom: 10px;
+    }
+
+    .iconos {
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .hero {
+        transform: scale(80%);
+        margin-left: -40px;
+        margin-top: 20px;
+    }
+
+    .flecha {
+        bottom: 14%;
+        right: 8%;
+    }
+
+    .flecha i {
+        font-size: 45px;
+    }
+
+    .pie-pagina {
+        margin-top: -180px;
+    }
+
+    .iconos {
+        top: -140px;
+        right: 35px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .pie-pagina {
+        transform: scale(70%);
+        right: 45px;
+    }
+
+    .iconos {
+        right: 15px;
+    }
+
+}
+
+
+

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facundo Code</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Web iconos boxicons -->
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Web Iconos Remixicon -->
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!-- Font Roboto Mono e Inconsolata -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@200..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- FAVICON -->
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+
+    <!-- LOGO Y BARRA DE NAVEGACION -->
+
+    <header>
+
+        <!-- LOGO -->
+        
+        <a href="#" class="logo-principal" id="inicio">FACUNDO CODE</a>
+        
+        <!-- BARRA DE NAVEGACION -->
+         
+        <a href="#" id="logo"><div class='bx bx-menu' id="logo-menu"></div></a>
+
+       
+        <ul class="barra-nav" id="barra">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Información</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+    </header>
+
+    <section class="hero">
+        <div class="texto-hero">
+                <h4>Professional Developer</h4>
+                <h1>Facundo Code</h1>
+                <p id="sobre-mi">Manejo de diversos lenguajes de programación, sus fundamentos y aplicaciones.<br>
+                   Formado en metodologías ágiles para la gestión de proyectos y el trabajo colaborativo.<br>
+                   Especializado en testing para garantizar la calidad y explorar el diseño UX/UI para crear experiencias de usuario intuitivas.</p>
+                   <a href="https://drive.google.com/file/d/12mAahqfz0FtLLvMwt0Q54kMUV8Swv-lI/view?usp=sharing" target="_blank"><i class="ri-article-line"></i> CV</a><br>
+                   <a href="https://www.linkedin.com/in/facundo-carballal-9602ba1b1/" target="_blank"><i class="ri-linkedin-box-line"></i> Linkedin</a><br>
+                   <a href="#"><i class="ri-info-card-line"></i> Certificaciones</a>
+        </div>
+
+        <div class="imagen-hero">
+            <img src="/assets/dev.jpg" alt="Facundo foto" class="imagen">
+        </div>
+    </section>
+
+    <div class="iconos">
+        <a href="https://www.instagram.com/facucarballal1/" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://github.com/FacuCarballal" target="_blank"><i class="ri-github-fill"></i></a>
+        <a href="mailto:facundocarballal.19@gmail.com"><i class="ri-mail-fill"></i></a>
+    </div>
+
+    <div class="flecha" id="button">
+        <a href="#"><i class="ri-arrow-down-circle-line"></i></a>
+    </div>
+
+    
+    <section class="pie-pagina">
+            <div class= "port" id= "portfolio">
+                <h1>Portfolio</h1>
+                <h3>¡Podes ver todos mis trabajos y proyectos realizados aqui!</h3>
+                <a href="https://github.com/FacuCarballal" target="_blank"><img src="assets/imgs/github.jpg" alt="Portfolio" class="imagen-port"></a>
+            </div>
+
+            <form class="contact" id="contacto">
+                <h1>Contacto</h1>
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="motivo">Motivo</label>
+                <textarea name="motivo" id="motivo" cols= "40" rows="5"></textarea>
+                <input type="submit" value="Enviar" class="enviar">
+            </form>
+    </section>
+    
+    
+</body>
+
+<script>
+
+button.addEventListener('click', function() {
+    document.getElementById('contacto').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+logo.addEventListener('click', () => {
+  barra.classList.toggle('active');
+});
+
+</script>
+
+</html>
